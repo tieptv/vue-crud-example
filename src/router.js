@@ -7,7 +7,12 @@ export default new Router({
     routes: [
       {
         path: "/",
-        alias: "/tutorials",
+        name: "game",
+        component: () => import("./components/Game")
+      }
+      ,
+      {
+        path: "/tutorials",
         name: "tutorials",
         component: () => import("./components/TutorialsList")
       },

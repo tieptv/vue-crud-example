@@ -1,17 +1,6 @@
 <template>
    <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href="#" class="navbar-brand">Crud Example</a>
-      <div class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a href="/tutorials" class="nav-link">Tutorials</a>
-        </li>
-        <li class="nav-item">
-          <a href="/add" class="nav-link">Add</a>
-        </li>
-      </div>
-    </nav>
-
+   <div class="title">Trắc nghiệm vui</div>
     <div class="container mt-3">
       <router-view />
     </div>
@@ -23,3 +12,14 @@ export default {
   name: 'App'
 }
 </script>
+<style>
+.title{
+  background-color: #343a40;
+  color: white;
+  height: 60px;
+  font-size: 1.25rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+}
+</style>
